@@ -274,3 +274,11 @@ body {
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; }
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
