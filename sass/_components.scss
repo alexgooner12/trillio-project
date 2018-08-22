@@ -10,6 +10,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+    
+   @media only screen and (max-width: $bp-smallest) {
+       order: 1;
+       flex: 0 0 100%;
+       background-color: var(--color-grey-light-2);
+   }
+
 
   &__input {
     font-family: inherit;
@@ -21,8 +28,7 @@
     border-radius: 100px;
     width: 90%;
     transition: all 0.2s;
-    margin-right: -3.25rem;
-
+    margin-right: -3.25rem; 
 
     &:focus {
       outline: none;
@@ -192,7 +198,7 @@
       
     @media only screen and (max-width: $bp-small) {
         flex-direction: column;
-        padding: 1.5rem .5rem;
+        padding: 1.2rem .5rem;
     }
   }
 
@@ -228,7 +234,7 @@
 
 .gallery {
     display: flex;
-    
+
     &__item {
         
     }
@@ -236,6 +242,7 @@
     &__photo {
         width: 100%;
         display: block;
+
     }
 }
 
@@ -264,6 +271,10 @@
     &__stars {
         margin-right: auto;
         display: flex;
+        
+        @media only screen and (max-width: $bp-smallest) {
+            display: none;
+        }
     }
     
     &__icon-star,
@@ -277,10 +288,18 @@
         font-size: 1.2rem;
         display: flex;
         vertical-align: center;
+        
+        @media only screen and (max-width: $bp-smallest) {
+            margin-left: auto;
+        }
     }
     
     &__icon-location {
         margin-right: .5rem;
+        
+        @media only screen and (max-width: $bp-small) {
+            margin-right: .2rem;
+        }
     }
     
     &__rating {
@@ -306,6 +325,10 @@
         
         @media only screen and (max-width: $bp-small) {
             font-size: 1.8rem;
+        }
+        
+        @media only screen and (max-width: $bp-smallest) {
+            margin-left: auto;
         }
     }
     
@@ -509,6 +532,10 @@
         font-weight: 300;
         text-transform: uppercase;
         margin-bottom: 2.5rem;  
+        
+        @media only screen and (max-width: $bp-smallest) {
+           font-size: 1.6rem;
+        }
     }
 }
 

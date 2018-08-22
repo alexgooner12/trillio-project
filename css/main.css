@@ -88,6 +88,13 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media only screen and (max-width: 31.25em) {
+    .header {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      height: 11rem;
+      -ms-flex-line-pack: distribute;
+      align-content: space-around; } }
 
 .content {
   display: -webkit-box;
@@ -198,6 +205,15 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .search {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      background-color: var(--color-grey-light-2); } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -370,7 +386,7 @@ body {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        padding: 1.5rem .5rem; } }
+        padding: 1.2rem .5rem; } }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
@@ -424,6 +440,9 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media only screen and (max-width: 31.25em) {
+      .overview__stars {
+        display: none; } }
   .overview__icon-star, .overview__icon-location {
     width: 1.75rem;
     height: 1.75rem;
@@ -434,8 +453,14 @@ body {
     display: -ms-flexbox;
     display: flex;
     vertical-align: center; }
+    @media only screen and (max-width: 31.25em) {
+      .overview__location {
+        margin-left: auto; } }
   .overview__icon-location {
     margin-right: .5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__icon-location {
+        margin-right: .2rem; } }
   .overview__rating {
     background-color: var(--color-primary);
     margin-left: 3rem;
@@ -466,6 +491,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .overview__rating-average {
         font-size: 1.8rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .overview__rating-average {
+        margin-left: auto; } }
   .overview__rating-count {
     font-size: .8rem;
     text-transform: uppercase; }
@@ -640,6 +668,9 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2.5rem; }
+    @media only screen and (max-width: 31.25em) {
+      .cta__book-now {
+        font-size: 1.6rem; } }
 
 .btn {
   position: relative;
